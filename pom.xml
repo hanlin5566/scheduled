@@ -60,15 +60,15 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.hzcf.variable.VariableBootStarp</mainClass>
+							<mainClass>com.hanson.ScheduledBootStarp</mainClass>
 						</manifest>
 					</archive>
 
 					<!--打jar时排除编译完成的classes目录下的一些文件 -->
 					<excludes>
-						<exclude>application.properties</exclude>
+					<!-- 	<exclude>application.properties</exclude>
 						<exclude>logback.xml</exclude>
-						<exclude>bin/**</exclude>
+						<exclude>bin/**</exclude> -->
 					</excludes>
 				</configuration>
 			</plugin>

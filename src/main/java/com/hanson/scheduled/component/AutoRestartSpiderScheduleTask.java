@@ -11,7 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -19,7 +18,8 @@ import org.springframework.web.client.RestTemplate;
  * create on 2019年2月10日
  */
 
-@Component
+//@Component
+@Deprecated
 public class AutoRestartSpiderScheduleTask  {
 	Logger logger = LoggerFactory.getLogger(this.getClass());
     private  static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");

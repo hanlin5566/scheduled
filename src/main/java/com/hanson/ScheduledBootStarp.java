@@ -4,10 +4,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.web.client.RestTemplate;
 
 
-/**Xj
+/**
  * @author Hanson create on 2018年3月11日
  */
 @SpringBootApplication
@@ -16,5 +19,14 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class ScheduledBootStarp {
 	public static void main(String[] args) {
 		SpringApplication.run(ScheduledBootStarp.class, args);
+	}
+	
+	@Configuration
+	public class Config {
+
+	    @Bean
+	    public RestTemplate restTemplate() {
+	        return new RestTemplate();
+	    }
 	}
 }
