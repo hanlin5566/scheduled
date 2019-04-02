@@ -59,6 +59,6 @@ public class SYFCSalesPriceScheduled {
 	@Scheduled(cron = "0 0 */4 * * ?")
 	private void collectSalesPriceDetail() throws InterruptedException {
 		logger.info("collectSalesPriceDetail start at {}",System.currentTimeMillis());
-		restTemplate.postForObject(spiderURL+"/syfc/build/collectSalesPriceDetail",Object.class,Object.class);
+		restTemplate.postForObject(spiderURL+"/syfc/salesPirce/collectSalesPriceDetail",Object.class,Object.class);
 	}
 }
