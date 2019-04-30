@@ -1,0 +1,7 @@
+/*.classpath
+/*.project
+/.settings/*.prefs
+/target/*
+/*.iml
+/.idea/misc.xml
+/.idea/workspace.xml
