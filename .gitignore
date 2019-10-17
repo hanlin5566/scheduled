@@ -2,4 +2,6 @@
 /*.project
 /.settings/*.prefs
 /target/*
-/target/
+/*.iml
+/.idea/misc.xml
+/.idea/workspace.xml
